@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #5cb85c;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#mealDisplay {
+    margin-top: 30px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #337ab7;
+    min-height: 1.8em; /* Ensure consistent height for display area */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    #mealDisplay {
+        font-size: 1.5em;
+    }
+}
